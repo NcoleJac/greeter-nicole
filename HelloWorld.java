@@ -1,5 +1,10 @@
+import java.util.Scanner;
 public class HelloWorld {
+
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
+        System.out.print("What is your name? ");
+        String x = sc.nextLine();
         showGreeter2();
         showGreeter3();
         showGreeter();   

@@ -1,5 +1,6 @@
 public class Greeter2{
     public void saySomethingElse(){
-        System.out.println("Good Morning, Nicole!");
+        String x = sc.nextLine;
+        System.out.println("Good Morning, " + x + "!");
     }
 }
