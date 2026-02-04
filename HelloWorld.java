@@ -6,6 +6,8 @@ public class HelloWorld {
         System.out.print("What is your name? ");
         String x = sc.nextLine();
         System.out.println("Good morning, " + x + "!");
+        System.out.println("Good afternoon, " + x + "!");
+        System.out.println("Good evening, " + x + "!");
         sc.close();
     }
 }
