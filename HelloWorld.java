@@ -5,6 +5,13 @@ public class HelloWorld {
     public static void main(String[] args) {
         System.out.print("What is your name? ");
         String x = sc.nextLine();
+
+        if (x == null || x.trim().isEmpty()) {
+            System.out.println("No name entered. Goodbye!");
+            sc.close();
+            return;
+        }
+
         System.out.println("Good morning, " + x + "!");
         System.out.println("Good afternoon, " + x + "!");
         System.out.println("Good evening, " + x + "!");
