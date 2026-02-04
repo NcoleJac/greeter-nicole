@@ -5,7 +5,11 @@ public class HelloWorld {
     public static void main(String[] args) {
         System.out.print("What is your name? ");
         String x = sc.nextLine();
-        showGreeter2();
+        System.out.println("Good morning, " + x + "!");
+        sc.close();
+    }
+}
+       /*  showGreeter2();
         showGreeter3();
         showGreeter();   
      } 
@@ -20,5 +24,5 @@ public class HelloWorld {
     public static void showGreeter3(){
         Greeter3 myGreeter3Object = new Greeter3();
         myGreeter3Object.saySomethingMore();
-    }
-}
+    }*/
+
