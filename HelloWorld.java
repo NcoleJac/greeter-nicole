@@ -1,6 +1,24 @@
+import java.util.Scanner;
 public class HelloWorld {
+
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        showGreeter2();
+        System.out.print("What is your name? ");
+        String x = sc.nextLine();
+
+        if (x == null || x.trim().isEmpty()) {
+            System.out.println("No name entered. Goodbye!");
+            sc.close();
+            return;
+        }
+
+        System.out.println("Good morning, " + x + "!");
+        System.out.println("Good afternoon, " + x + "!");
+        System.out.println("Good evening, " + x + "!");
+        sc.close();
+    }
+}
+       /*  showGreeter2();
         showGreeter3();
         showGreeter();   
      } 
@@ -15,5 +33,5 @@ public class HelloWorld {
     public static void showGreeter3(){
         Greeter3 myGreeter3Object = new Greeter3();
         myGreeter3Object.saySomethingMore();
-    }
-}
+    }*/
+
